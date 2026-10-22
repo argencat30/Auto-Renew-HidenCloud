@@ -37,7 +37,7 @@ jobs:
       - name: ⚙ 设置sing-box代理
         continue-on-error: true
         env:
-          NODE_LINK: ${{ secrets.NODE_LINK_MC_GB }}
+          NODE_LINK: ${{ secrets.NODE_LINK_WISP }}
         run: |
           bash <(wget -qO- https://main.ssss.nyc.mn/setup_proxy.sh)
 
